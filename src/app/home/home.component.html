@@ -1,0 +1,32 @@
+<nav class="light-blue lighten-1" role="navigation">
+  <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Electrolib</a>
+    <ul class="right hide-on-med-and-down">
+      <li><a [routerLink]="['./book-upload']">Add New Book</a></li>
+      <!--<li><a [routerLink]="['./../logout']">Logout</a></li>-->
+      <!--<li><button md-icon-button [mdMenuTriggerFor]="menu"><i class="material-icons">arrow_drop_down_circle</i></button></li>-->
+      <li><a class="dropdown-button" data-activates="menu_dropdown">Profile<i class="material-icons right">arrow_drop_down</i></a></li>
+      <ul id="menu_dropdown" class="dropdown-content">
+        <li><a [routerLink]="['./../profile']">Profile</a></li>
+        <li class="divider"></li>
+        <li><a href="#!" [routerLink]="['./../home/logout']">Logout</a></li>
+      </ul>
+    </ul>
+
+    <ul id="nav-mobile" class="side-nav">
+      <li><a href="#">About</a></li>
+    </ul>
+    <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">=</i></a>
+  </div>
+</nav>
+<main class="my-comp">
+  <div class="section">
+    <div class="row result-row">
+      <div class="col s12 l3 offset-s1 sidebar">
+
+      </div>
+      <div>
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+</main>

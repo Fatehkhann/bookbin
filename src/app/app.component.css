@@ -1,0 +1,60 @@
+.search-book {
+    height: 100px;
+    width: auto;
+    justify-content: center;
+}
+
+.nav-link {
+    font-size: 22px;
+}
+
+/*
+ * Sidebar
+ */
+
+.sidebar {
+    position: fixed;
+    top: 10vh;
+    bottom: 0;
+    left: 0;
+    /*min-height: 1500px;*/
+    z-index: 1000;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+
+/* Sidebar navigation */
+.sidebar {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.search-form {
+    padding: 0 2vw 0 2vw;
+    background-color: whitesmoke;
+    background-image: url('/assets/img/search_bg.png');
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: center center; 
+}
+.result-row {
+    min-height: 900px;
+}
+
+.input-field {
+    padding-top: 2vh;
+}
+
+.input-field input {
+    margin: 0 0 0 0;
+    padding-top: 0vh;
+}
+
+.background {
+    /*background-image: url("/assets/img/search.png");*/
+    padding: 10px 10px;
+}
+
+.dropdown-content {
+    top: 8vh!important;
+}

@@ -1,0 +1,15 @@
+
+
+.header-info-img {
+    width: 128px;
+    height: auto;
+}
+
+.header-info-img-2 {
+    width: inherit;
+    height: inherit;
+}
+
+.fixed-action-btn {
+    position: fixed;
+}

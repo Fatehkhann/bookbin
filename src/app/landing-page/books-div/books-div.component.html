@@ -1,0 +1,21 @@
+<div class="section scrollspy blue" id="search">
+  <div class="container">
+    <div class="row">
+      <h3 class="white-text center">Free Books by BookBin.org</h3>
+      <br>
+      <br>
+      <br>
+      <div class="col s12 m4" *ngFor="let book of retrievedBooks; let i=index">
+        <div class="icon-block">
+          <div class="center light-blue-text">
+            <img class="responsive-img header-info-img center" src="{{book.book_cover}}">
+          </div>
+          <h5 class="center white-text">{{book.book_name}}</h5>
+          <p class="center white-text flow-text">{{book.book_desc}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+</div>

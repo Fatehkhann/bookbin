@@ -1,0 +1,56 @@
+<div class="row container">
+  <div class="col s12 m8 l8">
+    <div class="card">
+      <div class="card-image">
+        <img class="card-img-custom" src="assets/img/add_cover.png">
+      </div>
+      <div class="card-content">
+        <form [formGroup]="newItemForm">
+          <div class="row form-row">
+            <div class="input-field col s12">
+              <input type="text" class="validate" formControlName="book_name">
+              <label for="item_name">Book Name</label>
+            </div>
+          </div>
+          <div class="row form-row">
+            <div class="input-field col s6">
+              <input type="number" class="validate" formControlName="book_year">
+              <label for="first_name">Year</label>
+            </div>
+            <div class="input-field col s6">
+              <input type="text" class="validate" formControlName="book_city">
+              <label for="book_city">Book City</label>
+            </div>
+          </div>
+          <div class="row form-row">
+            <div class="input-field col s6">
+              <input type="text" class="validate" formControlName="book_author">
+              <label for="first_name">Author</label>
+            </div>
+            <div class="input-field col s6">
+              <input type="text" class="validate" formControlName="book_adder">
+              <label for="book_adder">Uploader</label>
+            </div>
+          </div>
+          <div class="row form-row">
+            <div class="input-field col s12">
+            <textarea class="materialize-textarea" formControlName="book_desc"></textarea>
+            <label for="textarea1">Description</label>
+            </div>
+          </div>
+          <div class="row form-row">
+            <div class="input-field col s12">
+              <input type="text" class="validate" formControlName="book_cover">
+              <label for="book_cover">Cover Image Url</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12 center-align">
+              <button class="btn red center-align" (click)="submitForm()" *ngIf="newItemForm.valid"><i class="hide-on-small-only icon-man-people-streamline-user left"></i>Submit</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
